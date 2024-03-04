@@ -1,0 +1,607 @@
+/* Big screen :1200px. */
+@media (min-width: 1500px) and (max-width: 1700px) {
+    .ingredient__text p{
+    font-size: 14px;
+}
+.support__modal{
+    right: 20px;
+    width: calc(100% - 320px);
+    height: calc(100vh - 140px);
+    bottom: 15px;
+}
+}
+@media (min-width: 1200px) and (max-width: 1500px) {
+    .footer__content{
+    justify-content: center;
+}
+.sideNav__list .sideNav__list__wrp{
+    height: 220px;
+}
+.ingredient__text p {
+    margin: 0;
+    font-size: 13px;
+}
+
+.ingredient__text .close-sh {
+    right: -7px;
+    top: -8px;
+}
+
+.ingredient__text a {
+    font-size: 11px;
+    padding: 7px 20px;
+}
+
+.ingredient__text {
+    gap: 8px;
+    padding-top: 14px;
+}
+
+.ingredient__list {
+    padding: 10px;
+}
+.RunSummary__table__wrp table{
+    min-width: 850px;
+}
+.RunSummary__table tr th {
+    font-size: 14px;
+}
+
+.RunSummary__table tr td button {
+    width: 100px;
+}
+.sideNav{
+    padding: 24px 24px 24px 18px;
+}
+.boxStyle{
+    height: calc(100% - 270px);
+    margin: 30px 30px;
+}
+.boxStyle .container{
+    padding: 20px 30px;
+}
+.SwapFLOW__left {
+    padding-top: 30px;
+    width: 40%;
+}
+
+.SwapFLOW__left i {
+    max-width: 330px;
+    padding: 20px;
+}
+
+.SwapFLOW__left .logo {
+    max-width: 250px;
+    /* margin-bottom: 80px; */
+}
+
+.lab-icon-1 {
+    top: -32px;
+}
+
+.lab-icon-2 {
+    bottom: 0;
+    left: -30px;
+}
+
+.SwapFLOW__right__content h1 {
+    font-size: 70px;
+}
+
+.SwapFLOW__right__content a {
+    font-size: 20px;
+}
+.header__content .container {
+    padding: 0 30px;
+}
+
+.header__nav ul li {
+    gap: 10px;
+}
+
+.header__nav ul li i {
+    scale: .85;
+}
+
+.header__nav ul li h6 {
+    line-height: 1;
+}
+
+.header__nav ul li span {
+    display: block;
+}
+
+
+
+.modal-dialog-centered{
+}
+.modal-content{
+    height: 400px;
+    max-width: 579px;
+    margin: auto;
+}
+
+.support__modal .modal-content {
+    max-width: calc(100% - 0px);
+}
+
+.support__modal {
+    right: 18px;
+    bottom: 1rem;
+    height: calc(100vh - 140px);
+}
+.Modal-1 .modalClose, .Modal-6 .modalClose {
+    position: absolute;
+    right: 20px;
+}
+
+.Modal-3  .CodeSend__blk {
+    margin-top: -20px;
+}
+
+.CodeSend__blk > i {
+    display: block;
+    max-width: 169px;
+    margin: auto;
+}
+
+.CodeSend__blk h3 {
+    font-size: var(--f24);
+    margin-bottom: 17px;
+}
+.Code__wrp input {
+    width: 55px;
+    height: 55px;
+    font-size: 30px;
+}
+.modal__content a.thm_btn{
+    padding: 14px 40px;
+}
+.req_modal__content .row{
+    margin: 25px auto 20px;
+}
+
+.req_modal__content {
+    margin-top: 10px;
+}
+
+}
+
+
+/* Normal screen :992px. */
+@media (min-width: 992px) and (max-width: 1200px) {
+    .SwapFLOW-area {
+        flex-direction: column-reverse;
+        height: auto;
+    }
+
+.SwapFLOW__left .logo {
+    position: absolute;
+    top: 0;
+    scale: .8;
+}
+    .RunSummary__table__wrp table{
+        min-width: 843px;
+    }
+
+.RunSummary__table tbody tr td:first-child {
+    max-width: 145px;
+}
+    .RunSummary__table tr th {
+        font-size: 13px;
+    }
+
+.Ingredient__tb span {
+    font-size: 13px;
+}
+    
+    .RunSummary__table tr td button {
+        width: 90px;
+        height: 45px;
+    }
+    
+    .SwapFLOW__left {
+        width: 100%;
+        padding-bottom: 50px;
+        height: 100vh;
+    }
+    
+    .SwapFLOW__right {
+        width: 100%;
+        /* position: relative; */
+        padding: 100px 0;
+        flex-direction: column;
+        gap: 60px 0;
+        height: 100vh;
+    }
+    
+    .SwapFLOW__right__btm {
+        position: unset;
+    }
+
+    .header__nav ul li div {
+        display: none;
+    }
+    
+    .footer__content {
+        justify-content: center;
+        text-align: center;
+        gap: 14px;
+    }
+    .sideNav__list .sideNav__list__wrp{
+    height: 275px;
+}
+    
+    .boxStyle {height: auto;}
+    .RunSummary__wrp {
+        padding: 20px;
+    }
+    
+    .RunSummary__list {
+        gap: 10px;
+    }
+
+
+}
+
+ 
+/* Tablet screen :768px. */
+@media (min-width: 768px) and (max-width: 991px) {
+    .RunSummary__table__wrp table{
+        min-width: 843px;
+    }
+    .RunSummary__table tr th {
+        font-size: 13px;
+    }
+
+.Ingredient__tb span {
+    font-size: 13px;
+}
+
+.RunSummary__table tr th:first-child {
+    padding-left: 24px;
+}
+
+.RunSummary__table tbody tr td:first-child {
+    max-width: 140px;
+    padding-left: 24px;
+}
+    
+    .RunSummary__table tr td button {
+        width: 90px;
+        height: 45px;
+    }
+    
+    .SwapFLOW-area {
+        flex-direction: column-reverse;
+        height: auto;
+    }
+
+.SwapFLOW__left .logo {
+    position: absolute;
+    top: 0;
+    scale: .7;
+}
+    .req_modal__content .row {
+        width: 100%;
+    }
+    .SwapFLOW__left {
+        width: 100%;
+        padding-bottom: 50px;
+        height: 100vh;
+    }
+    
+    .SwapFLOW__right {
+        width: 100%;
+        /* position: relative; */
+        padding: 100px 0;
+        flex-direction: column;
+        gap: 60px 0;
+        height: 100vh;
+    }
+    
+    .SwapFLOW__right__btm {
+        position: unset;
+    }
+    
+    .header__nav ul li div {
+        display: none;
+    }
+    
+    .footer__content {
+        justify-content: center;
+        text-align: center;
+        gap: 14px;
+    }
+    
+    .boxStyle {height: auto;}
+    .sideNav__list .sideNav__list__wrp{
+        height: 233px;
+    }
+
+    .Code__wrp input {
+        width: 50px;
+        height: 50px;
+        font-size: 28px;
+    }
+    
+    .Code__wrp {
+        gap: 10px;
+        margin: 20px 0 30px !important;
+    }
+
+
+    .RunSummary__wrp {
+        padding: 20px;
+    }
+    
+    .RunSummary__list {
+        gap: 20px 10px;
+        flex-wrap: wrap;
+    }
+
+
+    .close-sh {
+        top: -15px;
+        right: -20px;
+    }
+    .support__modal {
+        height: calc(100vh - 150px);
+        bottom: 16px;
+    }
+    .support__modal .modal-content {
+        max-width: calc(100% - 0px);
+        border-radius: 14px;
+    }
+}
+
+ 
+/* small screen :320px. */
+@media (max-width: 767px) {
+    .em-text {
+        display: block;
+        text-align: left;
+        width: 100%;
+        margin-top: 14px;
+    }
+    .em-text {display: block;}
+    .dashboard-area {
+        width: 100%;
+        margin: auto;
+    }
+    
+    .sideNav {
+        left: -300px;
+        padding-top: 40px;
+    }
+
+.sideNav .close {
+    display: block;
+}
+
+.sideNav.active {
+    left: 0;
+}
+    .header__nav ul li.barBtn{
+    display: flex;
+    margin-right: 10px;
+}
+    .SwapFLOW-area {
+        flex-direction: column-reverse;
+        height: auto;
+    }
+
+.SwapFLOW__left .logo {
+    position: absolute;
+    top: 20px;
+    z-index: 99;
+    max-width: 170px;
+}
+    
+    .SwapFLOW__left {
+        width: 100%;
+        padding-bottom: 50px;
+        padding: 50px 20px;
+        height: 100vh;
+    }
+    
+    .SwapFLOW__right {
+        width: 100%;
+        position: relative;
+        padding: 100px 20px 50px;
+        flex-direction: column;
+        gap: 60px 0px;
+        height: calc(100vh - 100px);
+    }
+    
+    
+    .SwapFLOW__right__btm {
+        position: unset;
+    }
+    .SwapFLOW__right__content h1 {
+        font-size: 50px;
+    }
+    
+    .SwapFLOW__right__content p {
+        font-size: 16px;
+    }
+    
+    .SwapFLOW__right__content a {
+        padding: 12px 26px;
+        font-size: 19px;
+    }
+    .header__nav ul li div {
+        display: none;
+    }
+    
+    .footer__content {
+        justify-content: center;
+        text-align: center;
+        gap: 14px;
+    }
+    
+    .boxStyle {height: auto;margin: 20px;margin-bottom: 0;}
+    .sideNav__list .sideNav__list__wrp{
+        height: 233px;
+    }
+    .boxStyle .container {
+        padding: 20px;
+    }
+    
+    .dashboard__title {
+        padding: 20px;
+    }
+    .header__nav ul li i {
+        width: 40px;
+        height: 40px;
+    }
+    
+    .header__content .container {
+        padding: 0 20px;
+    }
+    .thm_btn{
+    padding: 10px 24px;
+    font-size: 14px;
+}
+.ingredient__list {
+    min-height: 255px;
+    height: auto;
+    justify-content: center;
+}
+.CodeSend__blk h3{
+    font-size: 24px;
+}
+.CodeSend__blk i img {
+    max-width: 120px;
+}
+
+.modal__content a.thm_btn {
+    padding: 15px 40px;
+}
+a.modalClose{
+    margin-bottom: 20px;
+}
+
+.EmailCode__wrp {
+    margin: 20px 10px;
+}
+
+.EmailCode__wrp input {
+    padding: 0 20px;
+    height: 56px;
+}
+.Code__wrp input {
+    width: 40px;
+    height: 40px;
+    font-size: 20px;
+    border-radius: 7px;
+}
+
+.modal__content h3 {
+    font-size: 22px;
+}
+
+.Code__wrp {
+    gap: 10px;
+    margin: 20px 0 30px !important;
+}
+.req_modal__content .row {
+    width: 100%;
+    margin: 24px 0 20px;
+}
+
+.input__blk {
+    margin-bottom: 10px;
+}
+
+.input__blk label, .select__blk label {
+    margin-bottom: 4px;
+}
+.RunSummary__wrp {
+    padding: 20px;
+    padding-top: 40px;
+}
+
+.RunSummary__list ul li a {
+    font-size: 14px;
+}
+
+.RunSummary__list {
+    gap: 20px 10px;
+    flex-wrap: wrap;
+    flex-direction: column;
+}
+
+.RunSummary__list__last {
+    position: absolute;
+    top: 5px;
+    right: 6px;
+}
+.schedule__call > i {
+    max-width: 200px;
+    display: block;
+    margin: auto;
+}
+
+.RunSummary__table__wrp table{
+    min-width: 770px;
+}
+.RunSummary__table tr th {
+    font-size: 13px;
+}
+
+.RunSummary__table tr th:first-child {
+    padding-left: 24px;
+}
+
+.Ingredient__tb span {
+font-size: 13px;
+}
+
+.RunSummary__table tr td:first-child {
+    padding-left: 24px;
+    max-width: 140px;
+}
+
+.RunSummary__table tr td button {
+    width: 90px;
+    height: 45px;
+}
+.Tell__modal__content {
+    padding: 20px 0;
+}
+.message__text p{
+    font-size: 14px;
+    margin: 20px 0;
+}
+
+.message__text {
+    margin-top: 20px;
+}
+.close-sh {
+    top: -14px;
+    right: -10px;
+    scale: .8;
+}
+.support__modal .boxStyle .container{
+    max-width: 100%;
+    width: 100%;
+}
+.support__modal {
+    height: calc(100vh - 140px);
+    bottom: 16px;
+    width: calc(100% - 45px);
+}
+.support__modal .modal-content {
+    max-width: calc(100% - 0px);
+    border-radius: 14px;
+}
+
+
+}
+ 
+/* Large Mobile screen :480px. */
+@media only screen and (min-width: 480px) and (max-width: 767px) {
+.container {width:450px}
+ 
+}

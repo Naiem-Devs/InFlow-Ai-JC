@@ -1,0 +1,429 @@
+<!doctype html>
+<html class="no-js" lang="">
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="x-ua-compatible" content="ie=edge">
+        <title>Site title</title>
+        <meta name="description" content="">
+        <meta name="viewport" content="width=device-width, initial-scale=1"> 
+		<link rel="shortcut icon" type="image/x-icon" href="#">
+        <!-- Place favicon.ico in the root directory -->
+        
+		<!-- CSS here -->
+        <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/intl-tel-input@18.2.1/build/css/intlTelInput.css">
+        <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+        <link rel="stylesheet" href="assets/css//select2.min.css"> 
+        <link rel="stylesheet" href="assets/css/nice-select.css"> 
+        <link rel="stylesheet" href="assets/css/bootstrap.min.css"> 
+        <link rel="stylesheet" href="assets/css/style.css">
+        <link rel="stylesheet" href="assets/css/responsive.css">
+    </head>
+    <body>
+
+        <div id="myBar" class="w3-green progress__top" style="width:0"></div>
+        <!-- <div class="progress__top"></div> -->
+
+        <div class="preLoder page-loader">
+            <svg class="ap" viewBox="0 0 128 256" width="128px" height="256px" xmlns="http://www.w3.org/2000/svg">
+                <defs>
+                    <linearGradient id="ap-grad1" x1="0" y1="0" x2="0" y2="1">
+                        <stop offset="0%" stop-color="hsl(223,90%,55%)" />
+                        <stop offset="100%" stop-color="hsl(146.67deg 66.5% 39.8%)" />
+                        <!-- <stop offset="0%" stop-color="hsl(223,90%,55%)" />
+                        <stop offset="100%" stop-color="hsl(253,90%,55%)" /> -->
+                    </linearGradient>
+                    <linearGradient id="ap-grad2" x1="0" y1="0" x2="0" y2="1">
+                        <stop offset="0%" stop-color="hsl(146.67deg 66.5% 39.8%)" />
+                        <stop offset="50%" stop-color="hsl(223,90%,55%)" />
+                        <stop offset="100%" stop-color="hsl(253,90%,55%)" />
+                        <!-- <stop offset="0%" stop-color="hsl(193,90%,55%)" />
+                        <stop offset="50%" stop-color="hsl(223,90%,55%)" />
+                        <stop offset="100%" stop-color="hsl(253,90%,55%)" /> -->
+                    </linearGradient>
+                </defs>
+                <circle class="ap__ring" r="56" cx="64" cy="192" fill="none" stroke="#ddd" stroke-width="16" stroke-linecap="round" />
+                <circle class="ap__worm1" r="56" cx="64" cy="192" fill="none" stroke="url(#ap-grad1)" stroke-width="16" stroke-linecap="round" stroke-dasharray="87.96 263.89" />
+                <path class="ap__worm2" d="M120,192A56,56,0,0,1,8,192C8,161.07,16,8,64,8S120,161.07,120,192Z" fill="none" stroke="url(#ap-grad2)" stroke-width="16" stroke-linecap="round" stroke-dasharray="87.96 494" />
+            </svg>
+        </div>
+
+<style>
+
+.progress__top {
+    position: fixed;
+    top: 0;
+    left: 0;
+    background: #29bb6a;
+    height: 5px;
+    z-index: 999;
+}
+
+.preLoder {
+    position: fixed;
+    width: 100%;
+    height: 100%;
+    background: #0009;
+    z-index: 9999;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+    ap {
+	width: 8em;
+	height: 16em;
+}
+.ap__ring {
+	stroke: hsla(var(--hue),10%,10%,0.15);
+	transition: stroke 0.3s;
+}
+.ap__worm1,
+.ap__worm2 {
+	animation-duration: 3s;
+	animation-iteration-count: infinite;
+}
+.ap__worm1 {
+	animation-name: worm1;
+}
+.ap__worm2 {
+	animation-name: worm2;
+	visibility: hidden;
+}
+
+/* Dark theme */
+@media (prefers-color-scheme: dark) {
+	:root {
+		--bg: hsl(var(--hue),10%,10%);
+		--fg: hsl(var(--hue),10%,90%);
+	}
+	.ap__ring {
+		stroke: hsla(var(--hue),10%,90%,0.1);
+	}
+}
+
+/* Animtions */
+@keyframes worm1 {
+	from {
+		animation-timing-function: ease-in-out;
+		stroke-dashoffset: -87.96;
+	}
+	20% {
+		animation-timing-function: ease-in;
+		stroke-dashoffset: 0;
+	}
+	60% {
+		stroke-dashoffset: -791.68;
+		visibility: visible;
+	}
+	60.1%,
+	to {
+		stroke-dashoffset: -791.68;
+		visibility: hidden;
+	}
+}
+@keyframes worm2 {
+	from,
+	60% {
+		stroke-dashoffset: -87.96;
+		visibility: hidden;
+	}
+	60.1% {
+		animation-timing-function: cubic-bezier(0,0,0.5,0.75);
+		stroke-dashoffset: -87.96;
+		visibility: visible;
+	}
+	77% {
+		animation-timing-function: cubic-bezier(0.5,0.25,0.5,0.88);
+		stroke-dashoffset: -340;
+		visibility: visible;
+	}
+	to {
+		stroke-dashoffset: -669.92;
+		visibility: visible;
+	}
+}
+</style>
+
+    <main class="boxBody">
+
+        <div class="sideNav">
+            <button type="button" class="close"><img src="assets/img/close.svg" alt=""></button>
+            <a href="index.html" class="logo"><img src="assets/img/logo.svg" alt=""> <span>Empowered Chemistry</span></a>
+            <button type="button" class="SwapBtn"><img src="assets/img/Plus.svg" alt=""> New Swap Run</button>
+            <div class="sideNav__list">
+                <b>Recent Swap Runs</b>
+                <div class="srcBox">
+                   <a href="#"><img src="assets/img/Search.svg" alt=""></a> <input type="text" placeholder="Search..">
+                </div>
+                <div class="sideNav__list__wrp">
+                    <ul>
+                        <li><a href="#">Skincare Foundation</a></li>
+                        <li><a href="#">Skincare Foundation</a></li>
+                        <li><a href="#">Skincare Foundation</a></li>
+                        <li><a href="#">Skincare Foundation</a></li>
+                        <li><a href="#">Skincare Foundation</a></li>
+                        <li><a href="#">Skincare Foundation</a></li>
+                        <li><a href="#">Skincare Foundation</a></li>
+                        <li><a href="#">Skincare Foundation</a></li>
+                        <li><a href="#">Skincare Foundation</a></li>
+                        <li><a href="#">Skincare Foundation</a></li>
+                        <li><a href="#">Skincare Foundation</a></li>
+                        <li><a href="#">Skincare Foundation</a></li>
+                        <li><a href="#">Skincare Foundation</a></li>
+                        <li><a href="#">Skincare Foundation</a></li>
+                        <li><a href="#">Skincare Foundation</a></li>
+                    </ul>
+                </div>
+            </div>
+            <div class="user__blk">
+                <i>
+                    <img src="assets/img/user-img.png" alt="">
+                </i>
+                <b>
+                    Paul Melone
+                    <span>Python Dev</span>
+                </b>
+                <a href="#" class="setting_btn"><img src="assets/img/setting-btn.svg" alt=""></a>
+            </div>
+        </div>
+
+
+
+        <!---------dashboard Section START ---------->
+        <section class="dashboard-area vh-100">
+            <div class="header__content">
+                <div class="container">
+                     <div class="row">
+                        <div class="col-lg-12">
+                            <div class="header__nav">
+                                <ul>
+                                    <li class="barBtn">
+                                        <button type="btn"><img src="assets/img/menu-bar.svg" alt=""></button>
+                                    </li>
+                                    <li class="active">
+                                        <a href="">
+                                            <i style="background: #D7F9EF; color: var(--greenColor);">1</i>
+                                            <div class="">
+                                                <h6>Ingredient of interest</h6>
+                                                <span>Use Author API</span>
+                                            </div>
+                                        </a>
+                                    </li>
+                                    <li><i class="arrow"><img src="assets/img/Arrow-right-lg.svg" alt=""></i></li>
+                                    <li>
+                                        <a href="">
+                                            <i>2</i>
+                                            <div class="">
+                                                <h6>Benefit / Activity</h6>
+                                                <span>Use Author API</span>
+                                            </div>
+                                        </a>
+                                    </li>
+                                    <li><i class="arrow"><img src="assets/img/Arrow-right-lg.svg" alt=""></i></li>
+                                    <li>
+                                        <a href="#">
+                                            <i>3</i>
+                                            <div class="">
+                                                <h6>Chassis</h6>
+                                                <span>The Last Step</span>
+                                            </div>
+                                        </a>
+                                    </li>
+                                    <li><i class="arrow"><img src="assets/img/Arrow-right-lg.svg" alt=""></i></li>
+                                    <li>
+                                        <a href="">
+                                            <i>4</i>
+                                            <div class="">
+                                                <h6>Get Alternatives</h6>
+                                                <span>The Last Step</span>
+                                            </div>
+                                        </a>
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+                     </div>
+                </div>
+            </div>
+            <div class="boxStyle">
+                <div class="container">
+                    <div class="nameAndTime">
+                        <div class="row">
+                            <div class="col-lg-6 col-xl-4">
+                                <div class="input__blk">
+                                    <label for="">Run name</label>
+                                    <input type="text" placeholder="Provide a run name">
+                                </div>
+                            </div>
+                            
+                            <div class="col-lg-4">
+                                <div class="d-flex align-items-center justify-content-center h-100 mb-3">
+                                    <button class="w3-button w3-green" onclick="move()">Click Me Progress</button> 
+                                </div>
+                            </div>
+                            <div class="col-12">
+                                <hr class="mt-0 mb-4">
+                            </div>
+                            <div class="col-lg-6 col-xl-4">
+                                <div class="option__Activity">
+                                    <div class=" select__green selectTwo">
+                                        <label for="">Select ingredient to replace</label>
+                                        <select class="wide">
+                                            <option data-display="Choose"></option>
+                                            <option value="1">Main Activity</option>
+                                            <option value="2">Main Activity</option>
+                                            <option value="3">Main Activity</option>
+                                            <option value="4">Main Activity</option>
+                                            <option value="5">Main Activity</option>
+                                            <option value="6">Main Activity</option>
+                                            <option value="7">Main Activity</option>
+                                            <option value="8">Main Activity</option>
+                                            <option value="9">Main Activity</option>
+                                            <option value="10">Main Activity</option>
+                                            <option value="11">Main Activity</option>
+                                          </select>
+                                    </div>
+                                    <button type="button" class="closeActivity"><img src="assets/img/close-red.svg" alt=""></button>
+                                </div>
+                            </div>
+                            
+                        </div>
+                        <div class="row mt-5">
+                            <div class="col-lg-12">
+                                <div class="">
+                                    <a href="#" class="thm_btn float-end">Run SwapFLOW <img src="assets/img/Arrow-right.svg" alt=""></a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="footer-area">
+                <div class="container">
+                    <div class="row">
+                        <div class="col-lg-12">
+                            <div class="footer__content">
+                                <b>Version 1.1 (updated 1-14-24)</b>
+                                <p>InFLOWS AI results require expert review, and while powerful, the expertise of the scientists is always necessary. <span>InFLOWS AI July 5th Version</span></p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!---------dashboard Section End ---------->
+
+
+
+    </main>
+
+    <a href="#" class="C_care " data-bs-toggle="modal" data-bs-target="#exampleModal"><img src="assets/img/C_care.svg" alt=""></a>
+      <!-- support__modal -->
+      <div class="modal fade support__modal" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+        <div class="modal-dialog modal-dialog-scrollable modal-fullscreen">
+            <div class="modal-content">
+            <div class="supportModal-body">
+                <div class="boxStyle">
+                    <div class="container">
+                        <div class="RunSummary__content">
+                            <div class="schedule__call">
+                                <a href="#" class="close-sh" data-bs-dismiss="modal"><img src="assets/img/close.svg" alt=""></a>
+                                <p>As an initial beta user, your feedback is very important to us. We would love to speak with you live as you review your results.</p>
+                                <span>Click here to schedule a video call.</span>
+                                <button type="button"><img src="assets/img/Calendar-color.svg" alt=""></button>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <div class="dashboard__title">
+                        <h5>Drop us a message</h5>
+                    </div>
+        
+                    <div class="container">
+                        <div class="message__content">
+                            <div class="row">
+                                <div class="col-lg-6  ">
+                                    <div class="input__blk">
+                                        <label for="">First name</label>
+                                        <input type="text" placeholder="Paul">
+                                    </div>
+                                </div>
+                                <div class="col-lg-6  ">
+                                    <div class="input__blk">
+                                        <label for="">Last name</label>
+                                        <input type="text" placeholder="Melone">
+                                    </div>
+                                </div>
+                                <div class=""></div>
+                                <div class="col-lg-6  ">
+                                    <div class="input__blk">
+                                        <label for="">Phone</label>
+                                        <input type="text" id="phone" placeholder="">
+                                    </div>
+                                </div>
+                                <div class="col-lg-6  ">
+                                    <div class="input__blk">
+                                        <label for="">Email</label>
+                                        <input type="text" placeholder="paulmelone@email.com">
+                                    </div>
+                                </div>
+                                <div class="col-lg-12">
+        
+                                    <div class="message__text">
+                                        <b>Message</b>
+                                        <textarea placeholder="Please Type Your Text..."></textarea>
+                                        <a href="#" class="thm_btn">Submit <img src="assets/img/Send.svg" alt=""></a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+        
+                </div>
+            </div>
+            </div>
+        </div>
+        </div>
+		<!-- JS here --> 
+        <script src="assets/js/jquery-3.4.1.min.js"></script>
+        <script src="assets/js/popper.min.js"></script>
+        <script src="assets/js/bootstrap.min.js"></script>
+        <script src="assets/js/jquery.nice-select.min.js"></script>
+        <script src="assets/js/select2.min.js"></script>
+        <script src="assets/js/main.js"></script>
+        <script src="https://cdn.jsdelivr.net/npm/intl-tel-input@18.2.1/build/js/intlTelInput.min.js"></script>
+        <script>
+            const input = document.querySelector("#phone");
+            window.intlTelInput(input, {
+              utilsScript: "https://cdn.jsdelivr.net/npm/intl-tel-input@18.2.1/build/js/utils.js",
+            });
+          </script>
+        <script>
+            // PreLoder
+            $(window).on('load',function(){
+                setTimeout(function(){ // allowing 3 secs to fade out loader
+                $('.page-loader').fadeOut('slow');
+                },1500);
+            });
+        </script>
+
+        <script>
+
+            // Progresssbar Top
+
+            function move() {
+            var elem = document.getElementById("myBar");   
+            var width = 1;
+            var id = setInterval(frame, 100);
+            function frame() {
+                if (width >= 100) {
+                clearInterval(id);
+                } else {
+                width++; 
+                elem.style.width = width + '%'; 
+                }
+            }
+            }
+        </script>
+    </body>
+</html>
+
